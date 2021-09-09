@@ -11,6 +11,7 @@
       <td>{{employee.name | employeeTitle:employee.gender}}</td>
       <td>{{employee.gender}}</td>
       <td>{{employee.annualSalary | currency:'USD':'symbol':'5.3-4'}}</td>
+      <!-- see different variabtion of angular pipe from here https://angular.io/api/common/DatePipe . Angular date pipe accepts only mm//dd/yyyy format  -->
       <td>{{employee.dateOfBirth | date:'LLL/d/YYYY' | uppercase}}</td>
     </tr>
     
